@@ -1,4 +1,4 @@
-import FootballIndex from "./modules/football/index.vue";
+import FootballIndex from "./components/football/index.vue";
 import Index from "./index.vue";
 import * as VueRouter from "vue-router";
 
