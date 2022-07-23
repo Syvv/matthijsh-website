@@ -1,0 +1,55 @@
+// Imports
+@import "./_variables.scss";
+
+// Reset basic style and use full screen
+html, body, #app {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+} 
+
+#app {
+    display: flex;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $primary;
+    padding-top: 2px;
+    width: 175px;
+
+    .nav-button {
+        border-radius: 5px;
+        text-align: center;
+        padding: 0.5em 1em;
+        margin: 0.25em 0.5em;
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            background-color: $primary-hover;
+        }
+    }
+}
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .status-bar {
+        height: 25px;
+        width: calc(100% - 0px);
+        padding: 10px;
+        background-color: $primary;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
+
+

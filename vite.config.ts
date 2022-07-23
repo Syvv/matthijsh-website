@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     Vue(),
   ],
+  // @ts-ignore
   test: {
     globals: true,
     environment: 'jsdom',
