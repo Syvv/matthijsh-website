@@ -16,7 +16,7 @@ html, body, #app {
 #nav {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100% - 2px);
     background-color: $primary;
     padding-top: 2px;
     width: 175px;
@@ -42,7 +42,7 @@ html, body, #app {
 
     .status-bar {
         height: 25px;
-        width: calc(100% - 0px);
+        width: calc(100% - 20px);
         padding: 10px;
         background-color: $primary;
     }
