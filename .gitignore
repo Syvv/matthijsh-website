@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 
 coverage
+
+.env
+local.settings.json
