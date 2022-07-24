@@ -12,9 +12,11 @@
   "dependencies": {
     "@vue/test-utils": "^2.0.0",
     "axios": "^0.27.2",
+    "chart.js": "^3.8.0",
     "jsdom": "^20.0.0",
     "vitest": "^0.18.1",
     "vue": "^3.2.36",
+    "vue-chartjs": "^4.1.1",
     "vue-router": "^4.1.2"
   },
   "devDependencies": {
