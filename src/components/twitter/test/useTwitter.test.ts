@@ -3,7 +3,6 @@ import Index from "../index.vue";
 import { useTwitter } from "../useTwitter";
 import axios from "axios";
 import { vi } from "vitest";
-import { of } from "rxjs";
 
 const response = {
   data: {
@@ -53,6 +52,7 @@ describe('When using Twitter', () => {
     // @ts-ignore
     axios.get = vi.fn(() => {
       return new Promise((resolve) => {
+        // @ts-ignore
         resolve(response)
       })
     });
