@@ -42,7 +42,7 @@ export function useTwitter() {
     });
 
     const fetchData = (startDate: string, endDate: string) => {
-        axios
+        return axios
             .get(`${import.meta.env.VITE_API_URL}/RetrieveParsedTweets?start_time=${startDate}&end_time=${endDate}`, {
                 withCredentials: false,
                 headers: {
