@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div>
+            The following graph shows which member of aespa has been hashtagged most often on the official aespa twitter account in the last 7 days.
+        </div>
         <doughnut
             id="hashtag-graph"
             :chart-data="hashtagChartData"

@@ -10,6 +10,12 @@ export function useTwitter() {
         winter: [],
     });
     const hashtagChartData = computed(() => {
+        const tweetsWithAMatchingHashtag = new Set([
+            ...hashtagObject.value.giselle, 
+            ...hashtagObject.value.ningning,
+            ...hashtagObject.value.karina,
+             ...hashtagObject.value.winter
+        ]);
         return {
             labels: [
                 "none",
@@ -22,7 +28,7 @@ export function useTwitter() {
                 {
                     label: "hashtags",
                     data: [
-                        tweets.value.length - hashtagObject.value.giselle.length - hashtagObject.value.ningning.length - hashtagObject.value.winter.length - hashtagObject.value.karina.length,
+                        tweets.value.length - Array.from(tweetsWithAMatchingHashtag).length,
                         hashtagObject.value.giselle.length,
                         hashtagObject.value.karina.length,
                         hashtagObject.value.ningning.length,
